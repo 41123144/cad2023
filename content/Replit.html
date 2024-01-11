@@ -143,6 +143,15 @@ img.add_border {
           
         </header>
     <div id="tipue_search_content">hw << <a href='hw.html'>Previous</a> <a href='s1511.html'>Next</a> >> s1511<br /><h1>Replit</h1>
+<p>利用 Replit 維護 Github 倉儲網站的步驟:</p>
+<ol>
+<li><span>Connect Github to replit </span>(目的在讓導入 Replit 的倉儲具有推回 (git push) Github 對應帳號的權限)</li>
+<li><span>Import repository tp replit </span>(選擇倉儲所使用的程式 Python 語言, 可以直接在 Replit 執行網頁編輯程式)</li>
+<li>手動取下與倉儲對應的子模組: git submodule update --init --recursive (假如連主倉儲內容與子模組全部手動取下資料, 則可使用 git clone --recurse-submodules 然後接 https 或 SSH 倉儲網址)</li>
+<li><span>Run Github repository on Replit </span>(Run Github repository on Replit由於從 Github 導入 Replit, 並沒有倉儲子模組的內容必須手動導入, 且以 pip 安裝執行 cmsimde 網頁編輯程式所需的模組, 其中包括 flask flask_cors bs4 lxml markdown pelican gevent 等)</li>
+<li>以 Run 執行動態網站, 以編輯表單中的 config 設定管理者密碼後, 將 config/config 編碼字串移至 secrets 工具中的 config 變數, 然後刪除倉儲中的 config/config 檔案, 以 Stop 關閉動態網站後, 重新以 Run 執行動態網站, 測試是否可以採新修改的管理者密碼登入動態網站.</li>
+<li>利用 cmsimde 動態網站功能修改內容後, 以 Convert 將資料轉為靜態網頁後, 回到 Replit 以 Git 工具進行內容的新增、提交與推送至對應的 Github 倉儲.</li>
+</ol>
 <br />hw << <a href='hw.html'>Previous</a> <a href='s1511.html'>Next</a> >> s1511</div>
         
     <!-- footer -->

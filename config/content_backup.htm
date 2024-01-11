@@ -38,6 +38,15 @@
 <h1><span>onshape</span></h1>
 <h1><span>hw</span></h1>
 <h2><span>Replit</span></h2>
+<p>利用 Replit 維護 Github 倉儲網站的步驟:</p>
+<ol>
+<li><a href="https://docs.replit.com/programming-ide/using-git-on-replit/connect-github-to-replit">Connect Github to Replit</a><span> </span>(目的在讓導入 Replit 的倉儲具有推回 (git push) Github 對應帳號的權限)</li>
+<li><a href="https://docs.replit.com/programming-ide/using-git-on-replit/import-repository">Import repository to Replit</a><span> </span>(選擇倉儲所使用的程式 Python 語言, 可以直接在 Replit 執行網頁編輯程式)</li>
+<li>手動取下與倉儲對應的子模組: git submodule update --init --recursive (假如連主倉儲內容與子模組全部手動取下資料, 則可使用 git clone --recurse-submodules 然後接 https 或 SSH 倉儲網址)</li>
+<li><a href="https://docs.replit.com/programming-ide/using-git-on-replit/running-github-repositories-replit">Run Github repository on Replit</a><span> </span>(由於從 Github 導入 Replit, 並沒有倉儲子模組的內容必須手動導入, 且以 pip 安裝執行 cmsimde 網頁編輯程式所需的模組, 其中包括 flask flask_cors bs4 lxml markdown pelican gevent 等)</li>
+<li>以 Run 執行動態網站, 以編輯表單中的 config 設定管理者密碼後, 將 config/config 編碼字串移至 secrets 工具中的 config 變數, 然後刪除倉儲中的 config/config 檔案, 以 Stop 關閉動態網站後, 重新以 Run 執行動態網站, 測試是否可以採新修改的管理者密碼登入動態網站.</li>
+<li>利用 cmsimde 動態網站功能修改內容後, 以 Convert 將資料轉為靜態網頁後, 回到 Replit 以 Git 工具進行內容的新增、提交與推送至對應的 Github 倉儲.</li>
+</ol>
 <h2><span>s1511</span></h2>
 <h2><span>localhost</span></h2>
 <h1><span>網路設定</span></h1>
@@ -112,7 +121,7 @@
 </tr>
 </tbody>
 </table>
-<h1>課程總結</h1>
+<h1>總結與心得</h1>
 <p><span>期望分數:60</span></p>
 <p><span>A: 是否按照進度明確標示倉儲的改版歷程 :是</span></p>
 <p><span>B: 是否根據<span> </span><span>IPv4 與 IPv6</span><span> </span>網路環境設定進行作法討論 :是</span></p>
@@ -126,7 +135,7 @@
 <p><span>J: 是否使用所分配的 CAD 套件完成<span>專案二 1D 平台零組件繪圖</span>, 並提供零組件下載 :否</span></p>
 <p><span>K: 是否利用<span> </span><span>ZMQ Remote API Python</span><span> </span>對專案二轉入的零組件設定感測器, 並進行鋼球永動模擬 :否</span></p>
 <p><span>L: 是否針對專案二的 1D 平台鋼球平衡系統所需的<span> </span><span>PID 控制理論</span>進行資料收集與 ChatGPT 對答 </span></p>
-<p><span>影片已看大部分,圖檔轉不進CoppeliaSim,遑論模擬</span></p>
+<p><span>心得:課程中期遇到s1511無法架設網站的情況,所幸Replit尚可使用,但繪製的圖檔轉不進CoppeliaSim,因此無法嘗試模擬</span></p>
 <h1>Brython</h1>
 <p><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">https://en.wikipedia.org/wiki/Python_(programming_language)</a></p>
 <h4>Examples:</h4>
