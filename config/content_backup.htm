@@ -40,17 +40,21 @@
 <h2><span>Replit</span></h2>
 <p>利用 Replit 維護 Github 倉儲網站的步驟:</p>
 <ol>
-<li><a href="https://docs.replit.com/programming-ide/using-git-on-replit/connect-github-to-replit">Connect Github to Replit</a><span> </span>(目的在讓導入 Replit 的倉儲具有推回 (git push) Github 對應帳號的權限)</li>
-<li><a href="https://docs.replit.com/programming-ide/using-git-on-replit/import-repository">Import repository to Replit</a><span> </span>(選擇倉儲所使用的程式 Python 語言, 可以直接在 Replit 執行網頁編輯程式)</li>
+<li><span>Connect Github to replit </span>(目的在讓導入 Replit 的倉儲具有推回 (git push) Github 對應帳號的權限)</li>
+<li><span>Import repository tp replit </span>(選擇倉儲所使用的程式 Python 語言, 可以直接在 Replit 執行網頁編輯程式)</li>
 <li>手動取下與倉儲對應的子模組: git submodule update --init --recursive (假如連主倉儲內容與子模組全部手動取下資料, 則可使用 git clone --recurse-submodules 然後接 https 或 SSH 倉儲網址)</li>
-<li><a href="https://docs.replit.com/programming-ide/using-git-on-replit/running-github-repositories-replit">Run Github repository on Replit</a><span> </span>(由於從 Github 導入 Replit, 並沒有倉儲子模組的內容必須手動導入, 且以 pip 安裝執行 cmsimde 網頁編輯程式所需的模組, 其中包括 flask flask_cors bs4 lxml markdown pelican gevent 等)</li>
+<li><span>Run Github repository on Replit </span>(Run Github repository on Replit由於從 Github 導入 Replit, 並沒有倉儲子模組的內容必須手動導入, 且以 pip 安裝執行 cmsimde 網頁編輯程式所需的模組, 其中包括 flask flask_cors bs4 lxml markdown pelican gevent 等)</li>
 <li>以 Run 執行動態網站, 以編輯表單中的 config 設定管理者密碼後, 將 config/config 編碼字串移至 secrets 工具中的 config 變數, 然後刪除倉儲中的 config/config 檔案, 以 Stop 關閉動態網站後, 重新以 Run 執行動態網站, 測試是否可以採新修改的管理者密碼登入動態網站.</li>
 <li>利用 cmsimde 動態網站功能修改內容後, 以 Convert 將資料轉為靜態網頁後, 回到 Replit 以 Git 工具進行內容的新增、提交與推送至對應的 Github 倉儲.</li>
 </ol>
 <h2><span>s1511</span></h2>
 <h2><span>localhost</span></h2>
-<h1><span>網路設定</span></h1>
-<h1><span>座位表</span></h1>
+<h1><span>任務一</span></h1>
+<h2><span>繪圖</span></h2>
+<h1>網路設定</h1>
+<p><span>由於電腦輔助設計室某部分套件,在IPv4網路環境下會被防毒軟體偵測到封包異常而封閉網路,因此以將IPv4網路關  閉,僅使用IPv6,並透過雙網路協定支援的代理主機設定,以便與僅支援IPv4的網路主機連</span><span>線.                        </span></p>
+<p><span>在課堂中則利用隨身碟上的批次檔案進行電腦輔助設計室網路環境設定</span>.</p>
+<h1>座位表</h1>
 <table style="width: 565px;">
 <tbody>
 <tr>
